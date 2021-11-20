@@ -12,7 +12,9 @@
   {% else %}
     <h1>Add a Toy</h1>
   {% endif %}
-  <img src="' %}" alt=""/>
+  <img src="{% static 'images/rope.png' %}" alt="A rope" />
+  <img src="{% static 'images/pinecone.png' %}" alt="A pinecone" />
+  <img src="{% static 'images/beads.png' %}" alt="A string of beads" />
 </div>
 <form action="" method="post" class="form-container" autocomplete="off">
   {% csrf_token %}
