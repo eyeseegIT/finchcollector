@@ -15,4 +15,7 @@ urlpatterns = [
   path("finches/<int:pk>/update", views.FinchUpdate.as_view(), name="finches_update"),
 
   path("finches/<int:pk>/delete", views.FinchDelete.as_view(), name="finches_delete"),
+
+  # DO WE USE <int:finch_id> here (instead of pk) b/c it's not a CBV?
+  path('finches/<int:finch_id>/add_feeding/', views.add_feeding, name='add_feeding')
 ]
